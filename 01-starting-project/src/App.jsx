@@ -1,11 +1,15 @@
-import { CORE_CONCEPTS } from "./data";
+import { CORE_CONCEPTS, EXAMPLES } from "./data";
 import Header from "./components/Header/Header";
 import CoreConcept from "./components/CoreConcept/CoreConcept";
 import TabButton from "./components/TabButton/TabButton";
+import { useState } from "react";
 
 function App() {
+   const [selectedTopic, setSelectedTopic] = useState(null);
+
    function handleSelect(selection) {
       console.log("Hello World.", selection);
+      setSelectedTopic(selection);
    }
 
    return (
@@ -41,8 +45,21 @@ function App() {
                      State
                   </TabButton>
                </menu>
+
+               <div id="tab-content">
+                  {selectedTopic ? (
+                     <>
+                        <h3>{EXAMPLES[selectedTopic].title}</h3>
+                        <p>{EXAMPLES[selectedTopic].description}</p>
+                        <pre>
+                           <code>{EXAMPLES[selectedTopic].code}</code>
+                        </pre>
+                     </>
+                  ) : (
+                     <p>Please select a topic.</p>
+                  )}
+               </div>
             </section>
-            Dynamic Content.
          </main>
       </div>
    );
