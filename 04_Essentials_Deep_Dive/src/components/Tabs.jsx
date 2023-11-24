@@ -1,7 +1,7 @@
 import React from "react";
 
-const Tabs = ({ children, buttons, buttonsContainer }) => {
-   const ButtonsContainer = buttonsContainer;
+const Tabs = ({ children, buttons, ButtonsContainer = "menu" }) => {
+   // const ButtonsContainer = buttonsContainer;
 
    return (
       <>
