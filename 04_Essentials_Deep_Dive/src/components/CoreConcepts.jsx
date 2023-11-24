@@ -1,6 +1,7 @@
 import React from "react";
 import CoreConcept from "./CoreConcept";
 import { CORE_CONCEPTS } from "../data.js";
+import Section from "./Section.jsx";
 
 const CoreConcepts = () => {
    return (
