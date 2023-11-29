@@ -12,9 +12,9 @@ function App() {
       //    curActivePlayer === "X" ? "O" : "X";
       //    console.log("curActivePlayer ", curActivePlayer);
       // });
-      setActivePlayer((currentPlayerSymbol) => {
-         console.log("currentPlayerSymbol ", currentPlayerSymbol);
-      });
+      // setActivePlayer((currentPlayerSymbol) => {
+      //    console.log("currentPlayerSymbol ", currentPlayerSymbol);
+      // });
    };
 
    return (
