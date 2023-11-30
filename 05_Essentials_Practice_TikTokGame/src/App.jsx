@@ -35,11 +35,11 @@ function App() {
 
             <GameBoard
                onSelectSquare={handleSelectSquare}
-               // activePlayerSymbol={activePlayer}
-               activePlayerSymbol="l"
+               activePlayerSymbol={activePlayer}
+               // activePlayerSymbol="l"
             />
          </div>
-         log
+         <h1>LOG</h1>
       </main>
    );
 }
