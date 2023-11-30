@@ -8,13 +8,9 @@ function App() {
    console.log("activePlayer ", activePlayer);
 
    const handleSelectSquare = () => {
-      // setActivePlayer((curActivePlayer) => {
-      //    curActivePlayer === "X" ? "O" : "X";
-      //    console.log("curActivePlayer ", curActivePlayer);
-      // });
-      // setActivePlayer((currentPlayerSymbol) => {
-      //    console.log("currentPlayerSymbol ", currentPlayerSymbol);
-      // });
+      setActivePlayer((curActivePlayer) =>
+         curActivePlayer === "X" ? "O" : "X"
+      );
    };
 
    return (
