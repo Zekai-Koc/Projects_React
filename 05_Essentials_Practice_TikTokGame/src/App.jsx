@@ -9,7 +9,6 @@ function App() {
 
    const handleSelectSquare = (rowIndex, colIndex) => {
       setActivePlayer((curActivePlayer) => {
-         // console.log("curActivePlayer ", curActivePlayer);
          return curActivePlayer === "X" ? "O" : "X";
       });
       setGameTurns((prevTurns) => {
@@ -42,11 +41,7 @@ function App() {
                />
             </ol>
 
-            <GameBoard
-               onSelectSquare={handleSelectSquare}
-               turns={gameTurns}
-               // activePlayerSymbol="l"
-            />
+            <GameBoard onSelectSquare={handleSelectSquare} turns={gameTurns} />
          </div>
          <Log turns={gameTurns} />
       </main>
