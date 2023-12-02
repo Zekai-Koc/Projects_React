@@ -15,7 +15,6 @@ const UserInput = ({ onChange, userInput }) => {
                   }
                />
             </p>
-
             <p>
                <label>Annual Investment</label>
                <input
@@ -26,7 +25,6 @@ const UserInput = ({ onChange, userInput }) => {
                />
             </p>
          </div>
-
          <div className="input-group">
             <p>
                <label>Expected Return</label>
@@ -37,7 +35,6 @@ const UserInput = ({ onChange, userInput }) => {
                   onChange={(e) => onChange("expectedReturn", e.target.value)}
                />
             </p>
-
             <p>
                <label>Duration</label>
                <input

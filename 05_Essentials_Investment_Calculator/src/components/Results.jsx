@@ -3,7 +3,6 @@ import { calculateInvestmentResults, formatter } from "../util/investment.js";
 
 const Results = ({ userInput }) => {
    const resultsData = calculateInvestmentResults(userInput);
-
    const initialInvestment =
       resultsData[0].valueEndOfYear -
       resultsData[0].interest -
