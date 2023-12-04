@@ -1,17 +1,12 @@
 import logo from "../assets/logo.png";
-import "./Header.css";
+import everything from "./Header.module.css";
 
 export default function Header() {
    return (
       <header>
          <img src={logo} alt="A canvas" />
          <h1>ReactArt</h1>
-         <p
-            style={{
-               color: "red",
-               border: "3px solid black",
-            }}
-         >
+         <p className={everything.para}>
             A community of artists and art-lovers.
          </p>
       </header>
