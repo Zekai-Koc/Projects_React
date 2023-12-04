@@ -9,7 +9,7 @@ export default function Header() {
          <p
             style={{
                color: "red",
-               textAlign: "left",
+               border: "3px solid black",
             }}
          >
             A community of artists and art-lovers.
