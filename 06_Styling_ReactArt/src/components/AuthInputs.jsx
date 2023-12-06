@@ -6,8 +6,6 @@ export default function AuthInputs() {
    const [submitted, setSubmitted] = useState(false);
 
    function handleInputChange(identifier, value) {
-      console.log(identifier);
-      console.log(value);
       if (identifier === "email") {
          setEnteredEmail(value);
       } else {
@@ -21,8 +19,6 @@ export default function AuthInputs() {
 
    const emailNotValid = submitted && !enteredEmail.includes("@");
    const passwordNotValid = submitted && enteredPassword.trim().length < 6;
-   console.log(passwordNotValid);
-   console.log(emailNotValid);
 
    return (
       <div id="auth-inputs">
