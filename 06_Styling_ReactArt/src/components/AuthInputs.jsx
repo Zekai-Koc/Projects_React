@@ -6,6 +6,8 @@ export default function AuthInputs() {
    const [submitted, setSubmitted] = useState(false);
 
    function handleInputChange(identifier, value) {
+      console.log(identifier);
+      console.log(value);
       if (identifier === "email") {
          setEnteredEmail(value);
       } else {
