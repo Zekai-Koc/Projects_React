@@ -33,33 +33,26 @@ export default function AuthInputs() {
    return (
       <div id="auth-inputs">
          <ControlController>
-            {/* <p> */}
-            {/* <Label $invalid={emailNotValid}>Email</Label> */}
             <Input
                label={"Email"}
                invalid={emailNotValid}
                type="email"
-               // className={emailNotValid ? "invalid" : undefined}
-               style={{
-                  backgroundColor: emailNotValid ? "red" : "grey",
-               }}
+               // style={{
+               //    backgroundColor: emailNotValid ? "red" : "grey",
+               // }}
                onChange={(event) =>
                   handleInputChange("email", event.target.value)
                }
             />
-            {/* </p> */}
-            {/* <p> */}
-            {/* <Label $invalid={passwordNotValid}>Password</Label> */}
             <Input
                label={"Password"}
                invalid={passwordNotValid}
                type="password"
-               className={passwordNotValid ? "invalid" : undefined}
+               // className={passwordNotValid ? "invalid" : undefined}
                onChange={(event) =>
                   handleInputChange("password", event.target.value)
                }
             />
-            {/* </p> */}
          </ControlController>
          <div className="actions">
             <button type="button" className="text-button">
