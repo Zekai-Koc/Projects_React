@@ -32,9 +32,6 @@ export default function AuthInputs() {
                label={"Email"}
                invalid={emailNotValid}
                type="email"
-               // style={{
-               //    backgroundColor: emailNotValid ? "red" : "grey",
-               // }}
                onChange={(event) =>
                   handleInputChange("email", event.target.value)
                }
@@ -43,7 +40,6 @@ export default function AuthInputs() {
                label={"Password"}
                invalid={passwordNotValid}
                type="password"
-               // className={passwordNotValid ? "invalid" : undefined}
                onChange={(event) =>
                   handleInputChange("password", event.target.value)
                }
